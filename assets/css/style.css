@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+:root {
+    --corprincipal: #E12C30;
+    --corbotao : linear-gradient(90deg, #12D01A 17.21%, #12D01A 78.69%);
+
+    --cortexto: #333;
+    --fonte: 'Manrope';
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.primeira-dobra{
+    background-image: url('../images/carros_avenida.png');
+    padding-top: 3em;
+}
+.logo img{
+    width: 70%;
+}
+.foto_banner img{
+    width: 80%;
+    position: relative;
+    top: 4%;
+}
+
+h1{
+    font-weight: 800 !important;
+    color: var(--corprincipal);
+}
+.title{
+    width: 100%;
+}
+
+.btn-afiliado{
+    background: var(--corbotao);
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+.btn-afiliado:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.formulario {
+    background-color: var(--corprincipal);
+}
