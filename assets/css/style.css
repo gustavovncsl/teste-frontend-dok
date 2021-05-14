@@ -2,12 +2,14 @@
 :root {
     --corprincipal: #E12C30;
     --corbotao : linear-gradient(90deg, #12D01A 17.21%, #12D01A 78.69%);
-
+    --corsegundaria: #676767;
     --cortexto: #333;
     --fonte: 'Manrope';
 }
 
-
+*{
+    font-family: 'Open Sans', sans-serif;
+}
 body{
     margin: 0;
     padding: 0;
@@ -15,7 +17,7 @@ body{
 }
 .primeira-dobra{
     background-image: url('../images/carros_avenida.png');
-    padding-top: 3em;
+    padding-top: 2em;
 }
 .logo img{
     width: 70%;
@@ -30,9 +32,18 @@ h1{
     font-weight: 800 !important;
     color: var(--corprincipal);
 }
+h2,h3,h4,h5,h6{
+    color: var(--corsegundaria);
+    font-weight: 700  !important;
+}
+p{
+   font-size: 1.3em; 
+   color: var(--corsegundaria);
+}
 .title{
     width: 100%;
 }
+
 
 .btn-afiliado{
     background: var(--corbotao);
@@ -50,7 +61,68 @@ h1{
     color: #fff;
     text-decoration: none;
 }
-
+.container_form{
+    display: flex;
+    flex-wrap: wrap !important;
+}
 .formulario {
     background-color: var(--corprincipal);
+    padding: 3em;
+}
+.video_form{
+    border-radius: 5px;
+}
+.form_afiliacao{
+    background-color: #CE282B;
+    padding: 2em;
+    border-radius: 20px;
+}
+input{
+    padding: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    margin: 15px !important;
+}
+::placeholder{
+    font-weight: 700;
+    font-size: 1.1em;
+}
+.btn-quero-afiliado{
+    background: var(--corbotao);
+    width: 95% !important;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    border: none;
+    margin: 0 auto;
+}
+.btn-quero-afiliado:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.container_vantagens{
+    padding: 4em 0em;
+}
+.vantagens{
+    padding-top: 2em;
+}
+.icon_vantagem{
+    background-color: var(--corprincipal);
+    padding:30px;
+    clip-path: circle(45% at 50% 50%);
+}
+.icon_vantagem img{
+    width: 70px;
+    margin: 0 auto;
+}
+.texto_vantagem{
+    width: 55%;
 }
