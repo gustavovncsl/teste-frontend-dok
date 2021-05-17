@@ -17,24 +17,24 @@
 
 <body>
     <main>
-        <section class="container-fluid d-flex primeira-dobra">
-            <figure class="foto_banner col-md-4 offset-md-1">
-                <img src="assets/images/foto_matheus.png" alt="Foto Jovem Segurando Smartphone - DOK">
+        <section class="container-fluid d-flex primeira-dobra justify-content-center">
+            <figure class="foto_banner col-md-4 offset-md-1 d-flex justify-content-center p-0">
+                <img src="assets/images/foto_matheus.png" class="" alt="Foto Jovem Segurando Smartphone - DOK">
             </figure>
-            <header class="col-6 d-flex flex-column justify-content-around">
-                <nav class="d-flex justify-content-between align-items-center">
-                    <a href="" class="logo"><img src="assets/images/logo_dok.svg" alt="Logo DOK"></a>
-                    <a href="" class="btn-afiliado">Já sou afiliado</a>
+            <header class="col-lg-6 d-flex p-0">
+                <nav class="d-flex navHeader align-items-center flex-wrap">
+                    <img class="logo pb-4" src="assets/images/logo_dok.svg" alt="Logo DOK">
+                    <a href="" class="btn-afiliado mb-5">Já sou afiliado</a>
+                    <div class="title pb-4">
+                        <h1>Torne-se um afiliado do maior despachante do Brasil!</h1>
+                    </div>
                 </nav>
-                <div class="title  ">
-                    <h1>Torne-se um afiliado do maior despachante do Brasil!</h1>
-                </div>
             </header>
         </section>
         <section class="container-fluid formulario">
-            <div class="container container_form d-flex justify-content-between align-items-center ">
+            <div class="container container_form d-flex justify-content-between align-items-center flex-wrap">
                 <div class="video_form col-lg-6">
-                    <iframe width="450" height="250" src="https://www.youtube.com/embed/1qfve3r3I-g"
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/1qfve3r3I-g"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen lazy=></iframe>
@@ -43,7 +43,7 @@
                     <form action="" class="form_afiliacao d-flex flex-column">
                         <input type="text" name="nome" id="nome" placeholder="Informe seu nome">
                         <input type="email" name="email" id="email" placeholder="Informe seu email">
-                        <button type="submit" class="btn-quero-afiliado w-80">Sim, quero ser um filiado</button>
+                        <button type="submit" class="btn-quero-ser-afiliado w-80">Sim, quero ser um filiado</button>
                     </form>
                 </div>
 
@@ -51,34 +51,90 @@
         </section>
         <section class="container-fluid container_vantagens">
             <h2 class="text-center">Conheça TODOS os motivos para ser um Afiliado DOK Despachante</h2>
-            <div class="vantagens d-flex flex-wrap">
+            <div class="vantagens d-flex  flex-wrap justify-content-center">
                 <!-- Itens de motivos para ser um afiliado -->
                 <!-- Item 01 -->
                 <div
                     class="box_vantagem d-flex col-lg-5 offset-md-1 justify-content-center align-items-center flex-wrap mt-5">
-                    <i class="icon_vantagem mr-3"><img src="/assets/images/porcentagem.svg" alt="porcentagem"></i>
-                    <p class="texto_vantagem">Fature <b>40%</b> dos honorários de cada pedido com pagamento aprovado! </p>
+                    <i class="icon_vantagem "><img src="assets/images/porcentagem.svg" alt="porcentagem"></i>
+                    <p class="texto_vantagem ml-3">Fature <b>40%</b> dos honorários de cada pedido com pagamento aprovado!
+                    </p>
                 </div>
                 <!-- Item 02 -->
                 <div class="box_vantagem d-flex col-lg-5 justify-content-center flex-wrap align-items-center mt-5 ">
-                    <i class="icon_vantagem mr-3"><img src="/assets/images/enviar.svg" alt="enviar"></i>
-                    <p class="texto_vantagem">Tenha suporte diário em nosso <b>grupos exclusivo</b> do Telegram </p>
+                    <i class="icon_vantagem "><img src="assets/images/enviar.svg" alt="enviar"></i>
+                    <p class="texto_vantagem ml-3">Tenha suporte diário em nosso <b>grupos exclusivo</b> do Telegram </p>
                 </div>
                 <!-- Item 03 -->
                 <div
                     class="box_vantagem d-flex col-lg-5 offset-md-1 justify-content-center align-items-center flex-wrap mt-5">
-                    <i class="icon_vantagem mr-3"><img src="/assets/images/presente.svg" alt="porcentagem"></i>
-                    <p class="texto_vantagem">Receba <b>premiações</b> a cada cota de vendas alcançadas! Ganhe Smartwatches, Smartphones e muito mais.</p>
+                    <i class="icon_vantagem "><img src="assets/images/presente.svg" alt="porcentagem"></i>
+                    <p class="texto_vantagem ml-3">Receba <b>premiações</b> a cada cota de vendas alcançadas! Ganhe
+                        Smartwatches, Smartphones e muito mais.</p>
                 </div>
                 <!-- Item 04 -->
                 <div class="box_vantagem d-flex col-lg-5 justify-content-center flex-wrap align-items-center mt-5">
-                    <i class="icon_vantagem mr-3"><img src="/assets/images/moeda.svg" alt="enviar"></i>
-                    <p class="texto_vantagem">Procurando por renda complementar? <b>Fature até R$1000.00</b> por mês fazendo uma única venda por dia</p>
+                    <i class="icon_vantagem"><img src="assets/images/moeda.svg" alt="moeda"></i>
+                    <p class="texto_vantagem ml-3">Procurando por renda complementar? <b>Fature até R$1000.00</b> por mês
+                        fazendo uma única venda por dia</p>
                 </div>
-
             </div>
-
         </section>
+        <section class="container-fluid info-1 d-flex flex-wrap align-items-center justify-content-center pb-4">
+            <div class="container_textoInfo-1 col-lg-6  d-flex flex-column ">
+                <h2>Já pensou em quantos veículos existem só no estado de São Paulo?</h2>
+                <p>Há 30 milhões de pessoas para você vender esse produto!</p>
+            </div>
+            <div class="container_imgInfo-1 col-lg-3 ">
+                <figure class="d-flex justify-content-center ">
+                    <img src="assets/images/carro.png" alt="Carro - DOK">
+                </figure>
+            </div>
+        </section>
+        <section class="container-fluid info-2 d-flex justify-content-center flex-wrap">
+            <div class="textoInfo container_textoInfo-2 col-lg-5 offset-md-1 d-flex flex-column ">
+                <p class="mb-4">Somente na capital paulista existem mais de 8.603.239 veículos circulando diariamente,
+                    de acordo com a
+                    pesquisa da Companhia de Engenharia de Tráfego (CET), de 2018.</p>
+                <p class="text-danger mb-4">No Estado de São Paulo há mais de 30 milhões de veículos. Isso quer dizer
+                    que você tem 30 milhões de
+                    potenciais clientes que precisam e que vão regularizar os débitos dos seus veículos anualmente.</p>
+                <p class="">Começando pelo IPVA, nos 3 primeiros meses do ano, passando para o licenciamento, que vai
+                    até dezembro,
+                    sem contar com eventuais multas e condutores inadimplentes que buscam parcelamentos durante o ano
+                    todo.</p>
+            </div>
+            <div class="container_imgInfo-2 col-lg-5 ">
+                <figure class="box_imgInfo-2  col-12 d-flex justify-content-center">
+                    <img src="assets/images/carros_parque.png" alt="Carro - DOK">
+                </figure>
+            </div>
+        </section>
+        <section class=" container-fluid info-3">
+            <h2 class="text-center mb-5">Seja um afiliado e aproveite todo potencial deste público</h2>
+            <div class="boxContent_info-3 d-flex justify-content-center align-items-center flex-wrap">
+                <div class="container_imgInfo-3 col-lg-4 p-0 ">
+                    <figure class="box_imgInfo-3 col-12 d-flex justify-content-center">
+                        <img src="assets/images/carteira.png" alt="Carteira - DOK">
+                    </figure>
+                </div>
+                <div class="textoInfo container_textoInfo-3 col-lg-5 ">
+                    <p>Com o DOK Despachante você oferece praticidade e solução para quem busca pagar seus débitos com a
+                        menor
+                        burocracia possível. Nossos serviços funcionam 100% online, com parcelamentos em até 12x,
+                        divididos em 6
+                        diferentes cartões, com as menores taxas do mercado.</p>
+                    <p>Afilie-se, leve nossos serviços para quem precisa e aproveite a renda extra que você sempre
+                        sonhou. Faça
+                        parte do time do despachante que mais cresce no Brasil, com 15 anos de experiência no mercado de
+                        veículos paulista.</p>
+                </div>
+            </div>
+            <div class="box_btnCta d-flex mt-5 mb-5 justify-content-center align-items-center">
+                <a href="" class="btn-quero-ser-afiliado">Quero ser afiliado</a>
+            </div>
+        </section>
+
     </main>
 
 

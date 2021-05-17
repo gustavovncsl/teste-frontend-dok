@@ -15,17 +15,23 @@ body{
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
+figure{
+    margin: 0 !important;
+    padding: 0;
+}
 .primeira-dobra{
     background-image: url('../images/carros_avenida.png');
     padding-top: 2em;
 }
-.logo img{
-    width: 70%;
+.navHeader{
+    justify-content: space-between;
+}
+img.logo{
+    width: 150px;
 }
 .foto_banner img{
-    width: 80%;
+    width: 70%;
     position: relative;
-    top: 4%;
 }
 
 h1{
@@ -55,7 +61,7 @@ p{
     font-size: 1.5em;
     color: #fff;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
 }
 .btn-afiliado:hover{
     color: #fff;
@@ -89,7 +95,7 @@ input{
     font-weight: 700;
     font-size: 1.1em;
 }
-.btn-quero-afiliado{
+.btn-quero-ser-afiliado{
     background: var(--corbotao);
     width: 95% !important;
     height: 50px;
@@ -103,7 +109,7 @@ input{
     border: none;
     margin: 0 auto;
 }
-.btn-quero-afiliado:hover{
+.btn-quero-ser-afiliado:hover{
     color: #fff;
     text-decoration: none;
 }
@@ -125,4 +131,141 @@ input{
 }
 .texto_vantagem{
     width: 55%;
+}
+
+.info-1{
+    background-color: var(--corprincipal);
+    padding-top: 2em;
+}
+.container_textoInfo-1 {
+   text-align: left !important;
+}
+.container_textoInfo-1 h2{
+    font-weight: 800 !important;
+    color: #fff;
+    font-size: 3em;
+    padding-top: 1em;
+}
+.container_textoInfo-1 p{
+    font-weight: 400 !important;
+    color: #fff;
+    font-size: 2.5em;
+    padding-top: 1em;
+
+}
+.container_imgInfo-1 img{
+    width: 100%;
+}
+.info-2{
+    padding: 2em;
+}
+.textoInfo{
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.box_imgInfo-2 img{
+    width: 85%;
+    height: 100%;
+}
+.box_imgInfo-3 img{
+    width: 100%;
+}
+
+.box_btnCta{
+    margin: 0 auto;
+}
+.box_btnCta{
+    width: 50%;
+}
+
+/* LAYOUT RESPONSIVO */
+@media screen and (max-width:768px){
+    .primeira-dobra{
+        flex-wrap: wrap;
+    }
+    .foto_banner {
+       order: 3;
+    }
+
+    .btn-afiliado{
+        order: 3;
+    }
+    .navHeader{
+        justify-content: center;
+    }
+    .title h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+    img.logo{
+        width: 100px;
+    }
+    .container_form_afiliacao{
+        margin-top: 5%;
+    }
+    input{
+        padding: 10px;
+        border-radius: 15px;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        margin: 15px !important;
+    }
+    ::placeholder{
+        font-weight: 700;
+        font-size: .9em;
+    }
+    .btn-quero-ser-afiliado{
+       
+        padding: 5px;
+        font-size: 1em;
+        
+    }
+    .box_btnCta .btn-quero-ser-afiliado{
+       
+        padding: 5px;
+        font-size: 1.5em;
+        
+    }
+    .box_vantagem{
+        flex-direction: column;
+        text-align: center;
+    }
+    .icon_vantagem {
+        margin-bottom: 5%;
+    }
+    .texto_vantagem{
+        margin: 0 !important;
+    }
+    .container_textoInfo-1 p{
+        text-align: center;
+    }
+    .container_textoInfo-1 h2{
+        font-size: 2em;
+        text-align: center;
+    }
+    .container_textoInfo-1 p{
+        font-size: 1.5em;
+    }
+    .container_imgInfo-1 img{
+        width: 80%;
+    }
+    .container_textoInfo-2{
+        
+        font-size: 1em;
+    }
+    .box_imgInfo-2 img{
+        width: 100%;
+        height: 100%;
+    }
+    .container_imgInfo-3{
+        margin-bottom: 10%;
+    }
+    .container_textoInfo-3 p{
+font-size: 1em;
+    }
+    .box_btnCta{
+        width: 100%;
+    }
 }
