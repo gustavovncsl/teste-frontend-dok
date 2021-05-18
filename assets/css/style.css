@@ -95,6 +95,12 @@ input{
     font-weight: 700;
     font-size: 1.1em;
 }
+button:focus{
+box-shadow: 1px 1px 5px #333 !important;
+border: none !important;
+outline: none !important;
+}
+
 .btn-quero-ser-afiliado{
     background: var(--corbotao);
     width: 95% !important;
@@ -178,6 +184,7 @@ input{
 .box_btnCta{
     width: 50%;
 }
+
 
 /* LAYOUT RESPONSIVO */
 @media screen and (max-width:768px){

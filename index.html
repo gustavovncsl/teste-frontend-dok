@@ -13,6 +13,7 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <title>DOK - Despachante</title>
+    
 </head>
 
 <body>
@@ -31,7 +32,7 @@
                 </nav>
             </header>
         </section>
-        <section class="container-fluid formulario">
+        <section id="formulario" class="container-fluid formulario">
             <div class="container container_form d-flex justify-content-between align-items-center flex-wrap">
                 <div class="video_form col-lg-6">
                     <iframe width="100%" height="250" src="https://www.youtube.com/embed/1qfve3r3I-g"
@@ -40,10 +41,10 @@
                         allowfullscreen lazy=></iframe>
                 </div>
                 <div class="container_form_afiliacao col-lg-6 ">
-                    <form action="" class="form_afiliacao d-flex flex-column">
-                        <input type="text" name="nome" id="nome" placeholder="Informe seu nome">
-                        <input type="email" name="email" id="email" placeholder="Informe seu email">
-                        <button type="submit" class="btn-quero-ser-afiliado w-80">Sim, quero ser um filiado</button>
+                    <form id="formularioAfiliacao" class="form_afiliacao d-flex flex-column">
+                        <input type="text" name="nome" id="nome" placeholder="Informe seu nome" required>
+                        <input type="email" name="email" id="email" placeholder="Informe seu email" required>
+                        <button type="submit" class="btn-quero-ser-afiliado w-80" id="btnAfiliado">Sim, quero ser um filiado</button>
                     </form>
                 </div>
 
@@ -57,13 +58,15 @@
                 <div
                     class="box_vantagem d-flex col-lg-5 offset-md-1 justify-content-center align-items-center flex-wrap mt-5">
                     <i class="icon_vantagem "><img src="assets/images/porcentagem.svg" alt="porcentagem"></i>
-                    <p class="texto_vantagem ml-3">Fature <b>40%</b> dos honorários de cada pedido com pagamento aprovado!
+                    <p class="texto_vantagem ml-3">Fature <b>40%</b> dos honorários de cada pedido com pagamento
+                        aprovado!
                     </p>
                 </div>
                 <!-- Item 02 -->
                 <div class="box_vantagem d-flex col-lg-5 justify-content-center flex-wrap align-items-center mt-5 ">
                     <i class="icon_vantagem "><img src="assets/images/enviar.svg" alt="enviar"></i>
-                    <p class="texto_vantagem ml-3">Tenha suporte diário em nosso <b>grupos exclusivo</b> do Telegram </p>
+                    <p class="texto_vantagem ml-3">Tenha suporte diário em nosso <b>grupos exclusivo</b> do Telegram
+                    </p>
                 </div>
                 <!-- Item 03 -->
                 <div
@@ -75,7 +78,8 @@
                 <!-- Item 04 -->
                 <div class="box_vantagem d-flex col-lg-5 justify-content-center flex-wrap align-items-center mt-5">
                     <i class="icon_vantagem"><img src="assets/images/moeda.svg" alt="moeda"></i>
-                    <p class="texto_vantagem ml-3">Procurando por renda complementar? <b>Fature até R$1000.00</b> por mês
+                    <p class="texto_vantagem ml-3">Procurando por renda complementar? <b>Fature até R$1000.00</b> por
+                        mês
                         fazendo uma única venda por dia</p>
                 </div>
             </div>
@@ -131,7 +135,7 @@
                 </div>
             </div>
             <div class="box_btnCta d-flex mt-5 mb-5 justify-content-center align-items-center">
-                <a href="" class="btn-quero-ser-afiliado">Quero ser afiliado</a>
+                <a href="#formulario" class="btn-quero-ser-afiliado">Quero ser afiliado</a>
             </div>
         </section>
 
@@ -139,10 +143,13 @@
 
 
 
+<script>
 
 
+</script>
 
-
+   
+<script src="assets/js/scripts.js"></script>
     <!-- Scritps BootStrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
