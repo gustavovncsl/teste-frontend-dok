@@ -6,4 +6,11 @@
 
 
 <h2>Informações extras:</h2>
+
+<p>Página desenvolvida com HTML, CSS, JS e BOOTSTRAP</p>
+
+<p>Na parde de validação do formulário, deixei a parte de fetch vazia pois não foi passada nenhuma URL para o endpoint do formulário.</p>
+
+<p>Foi um desafio muito legal de fazer e desenvolver essa página com os requisitos proposto.</p>
+
  

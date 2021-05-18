@@ -1,3 +1,4 @@
+// Funcção que faz o envio dos dados do formulario
 function envioDoFormulario() {
     const form_afiliacao = document.getElementById('formularioAfiliacao');
 
